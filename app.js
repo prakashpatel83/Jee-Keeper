@@ -37,3 +37,17 @@ function updateProgress(){
 }
 
 updateProgress();
+
+// Load saved checkbox states
+document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+    const savedState = localStorage.getItem(checkbox.id);
+
+    if (savedState === "true") {
+        checkbox.checked = true;
+    }
+
+    checkbox.addEventListener("change", () => {
+        localStorage.setItem(checkbox.id, checkbox.checked);
+    });
+});
+
