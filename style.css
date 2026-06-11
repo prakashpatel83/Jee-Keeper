@@ -11,7 +11,7 @@ body{
 }
 
 .title {
-    font-size: 100px;
+    font-size: 130px;
     text-align:center;
     font-weight: bold;
 }
@@ -46,14 +46,18 @@ body{
 }
 
 .chapter{
-    display:flex;
-    justify-content:space-between;
-    padding:10px 0;
+    display: flex;
+  align-items: center;
+  /* Change from space-between to flex-start */
+  justify-content: flex-start; 
 }
 
-input[type="checkbox"] {
-    transform: scale(1.5);
+/* Add a controlled gap between the text and the checkbox */
+.input[type="checkbox"] {
+  margin-left: 15px; /* Adjust this value to get the perfect gap */
 }
+
+
 
 .progress-bar{
     width:100%;
