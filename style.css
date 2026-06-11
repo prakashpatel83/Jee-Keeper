@@ -20,12 +20,13 @@ body{
 .credit{
     text-align:center;
     color:#a3a3a3;
-    font-size:35px;
+    font-size:45px;
     margin-top:-10px;
 }
 
 .quote {
     text-align: center;
+    font-size:45px;
     color: #00ff88;
     font-style: italic;
 }
